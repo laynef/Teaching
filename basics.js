@@ -9,7 +9,7 @@
 */
 
 var i = 0
-let = j = 0
+let j = 0
 const k = 0
 
 // Types of variables
@@ -19,14 +19,15 @@ const k = 0
     Number: 0 or 0.0
     String: "" or '' or [ES6]: ``
     Boolean: true or false 
-    Array: [1,2,3,4,5,6] // inside the array can be any type
-    Object: {key: value} // keys are strings and value can be any type
-                                     // values can be received by calling the object's key 
+    Array: [1,2,3,4,5,6]  // inside the array can be any type
+    Object: {key: value} // keys are strings and value can be any type even another object or function
+                                      // values can be received by calling the object's key 
     Function: function() {} or [ES6] () => {}
         // Does a set of instructions when called
         // To call use () 
         // functions can return any value or no value
         // () => is equal to function '()' returns '=>' **BLANK**
+
 */
 
 let num = 0
@@ -37,13 +38,17 @@ let obj = {cool: 7}
 
 console.log(`CALL OBJECT'S KEY cool returns ${obj.cool}`)
 
+// ES5 standard
 function add1(num) {
     return num + 2
 }
 
+// ES6
 let add2 = (num) => {
     return num + 2
 }
 
+// ES6: return num + 2
 let add3 = (num) => num + 2
 
+console.log(`FUNCTION CALLS WITH () ${add1(2)} \n 2 + 2 = ${add3(2)}`)
